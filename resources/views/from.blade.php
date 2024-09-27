@@ -16,6 +16,8 @@
 
   <!-- PLUGINS CSS STYLE -->
   <link href="{{asset('newdash/plugins/nprogress/nprogress.css')}}" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   
   
   
@@ -190,7 +192,7 @@
             <div class="input-group-prepend">
                 <span class="input-group-text mdi mdi-account" id="basic-addon3"><span class="ml-2">Frist Name</span></span>
             </div>
-            <input type="text" class="form-control" placeholder="Frist Name" aria-label="Frist Name" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" id="first_name" placeholder="Frist Name" aria-label="Frist Name" aria-describedby="basic-addon1">
           </div>
   
           <div class="input-group mb-3">
@@ -752,10 +754,15 @@
   </div>
 </div>
     
-  <a href="" class="btn btn-primary ">Submit</a>
+  <a class="btn btn-primary" id="submitbtn">Submit</a>
   
 
+
+
+
+
   <script>
+
 let professionCount = 1;
 
 document.getElementById('add-profession-btn').addEventListener('click', function() {
@@ -987,6 +994,18 @@ document.getElementById('add-education-btn').addEventListener('click', function(
 
 
           <!--  -->
+
+
+<script>
+  $('#submitbtn').on('click', function() {
+    var first_name = $('#first_name').val();
+
+
+
+
+    console.log(inputValue);
+  });
+</script>
 
 
 </body>
