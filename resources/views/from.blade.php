@@ -302,7 +302,7 @@
                                         <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
                                                 class="ml-2">Position</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Position" aria-label="Position"
+                                    <input type="text" name="position[]" class="form-control" placeholder="Position" aria-label="Position"
                                         aria-describedby="basic-addon1">
                                 </div>
 
@@ -311,7 +311,7 @@
                                         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
                                                 class="ml-2">Started on</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Started on"
+                                    <input type="text" name="started_on[]" class="form-control" placeholder="Started on"
                                         aria-label="Started on" aria-describedby="basic-addon1">
                                 </div>
 
@@ -320,12 +320,12 @@
                                         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
                                                 class="ml-2">End on</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="End on" aria-label="End on"
+                                    <input type="text" name="end_one[]" class="form-control" placeholder="End on" aria-label="End on"
                                         aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="currentWork0">
+                                    <input type="checkbox" name="currently[]" class="custom-control-input" id="currentWork0">
                                     <label class="custom-control-label" for="currentWork0">Currently Work Here</label>
                                 </div>
                             </div>
@@ -859,25 +859,25 @@
       <div class="input-group-prepend">
         <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span class="ml-2">Position</span></span>
       </div>
-      <input type="text" class="form-control" placeholder="Position" aria-label="Position" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="position[]" placeholder="Position" aria-label="Position" aria-describedby="basic-addon1">
     </div>
 
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span class="ml-2">Started on</span></span>
       </div>
-      <input type="text" class="form-control" placeholder="Started on" aria-label="Started on" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="started_on[]" placeholder="Started on" aria-label="Started on" aria-describedby="basic-addon1">
     </div>
 
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span class="ml-2">End on</span></span>
       </div>
-      <input type="text" class="form-control" placeholder="End on" aria-label="End on" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="end_one[]" placeholder="End on" aria-label="End on" aria-describedby="basic-addon1">
     </div>
 
     <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-      <input type="checkbox" class="custom-control-input" id="currentWork${professionCount}">
+      <input type="checkbox" name="currently[]" class="custom-control-input" id="currentWork${professionCount}">
       <label class="custom-control-label" for="currentWork${professionCount}">Currently Work Here</label>
     </div>
   `;
@@ -1084,16 +1084,21 @@
     var password = $('#password').val();
     var dateOfBirth = $('#date_birth').val();
     var religious = $('#religious').val();
-    var companyName = $("input[name='company_name[]']").map(function () { return $(this).val(); }).get();
-    
-    
-
+        
+    var profession = {
+      "companyName" : $("input[name='company_name[]']").map(function () { return $(this).val(); }).get(),
+      "position" : $("input[name='position[]']").map(function () { return $(this).val(); }).get(),
+      "started_on" : $("input[name='started_on[]']").map(function () { return $(this).val(); }).get(),
+      "end_one" : $("input[name='end_one[]']").map(function () { return $(this).val(); }).get(),
+      "currently" : $("input[name='currently[]']").map(function () { return $(this).val(); }).get()
+    };
+      
     console.log('Last Name:', lastName);
     console.log('Email:', email);
     console.log('Password:', password);
     console.log('Date of Birth:', dateOfBirth);
     console.log('Religious:', religious);
-    console.log(companyName);
+    console.log(profession);
   });
 </script>
 
