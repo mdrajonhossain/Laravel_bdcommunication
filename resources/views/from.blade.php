@@ -1087,6 +1087,7 @@
     var companyName = $("input[name='company_name[]']").map(function () { return $(this).val(); }).get();
     
     
+
     console.log('Last Name:', lastName);
     console.log('Email:', email);
     console.log('Password:', password);
