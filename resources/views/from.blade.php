@@ -1079,11 +1079,17 @@
 
     <script>
   $('#submitbtn').on('click', function() {
-    var lastName = $('#last_name').val();
-    var email = $('#email').val();
-    var password = $('#password').val();
-    var dateOfBirth = $('#date_birth').val();
-    var religious = $('#religious').val();
+    
+
+    var Userinfo = {
+      "firstName" : $('#first_name').val(),
+      "lastName" : $('#last_name').val(),
+      "email" : $('#email').val(),
+      "phone" : $('#phone').val(),
+      "password" : $('#password').val(),
+      "dateOfBirth" : $('#date_birth').val(),
+      "religious" : $('#religious').val()
+    }
         
     var profession = {
       "companyName" : $("input[name='company_name[]']").map(function () { return $(this).val(); }).get(),
@@ -1093,12 +1099,11 @@
       "currently" : $("input[name='currently[]']").map(function () { return $(this).val(); }).get()
     };
       
-    console.log('Last Name:', lastName);
-    console.log('Email:', email);
-    console.log('Password:', password);
-    console.log('Date of Birth:', dateOfBirth);
-    console.log('Religious:', religious);
+    console.log(Userinfo);
     console.log(profession);
+    
+    console.log("PermanentAddress");
+
   });
 </script>
 
