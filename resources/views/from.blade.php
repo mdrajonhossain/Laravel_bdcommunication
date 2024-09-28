@@ -278,7 +278,7 @@
 
             document.getElementById('add-profession-btn').addEventListener('click', function() {
                 const professionSection = document.getElementById('profession-section');
-                const newProfessionFields = `<div class="input-group mb-3">
+                const newProfessionFields = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
                             <div class="input-group-prepend">
                             <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span class="ml-2">Company Name</span></span>
                             </div>
@@ -607,7 +607,7 @@
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
                                                 class="ml-2">School/College/University Name</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="School/College/University Name"
+                                    <input type="text" name="course_name[]" class="form-control" placeholder="School/College/University Name"
                                         aria-label="College/University Name" aria-describedby="basic-addon1">
                                 </div>
 
@@ -616,12 +616,11 @@
                                         <span class="input-group-text mdi mdi-account-circle" id="basic-addon3"><span
                                                 class="ml-2">Title</span></span>
                                     </div>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select class="form-control" name="title[]">
+                                        <option value="ssc">SSC</option>
+                                        <option value="shc">HSC</option>
+                                        <option value="hon's">Hon's</option>
+                                        <option value="masters">Master's</option>
                                     </select>
                                 </div>
 
@@ -630,19 +629,18 @@
                                         <span class="input-group-text mdi mdi-map-marker-radius" id="basic-addon3"><span
                                                 class="ml-2">Year of graduation</span></span>
                                     </div>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select class="form-control" name="passingyear[]">
+                                        <option value="2020">1</option>
+                                        <option value="2020">2</option>
+                                        <option value="2020">3</option>
+                                        <option value="2020">4</option>
+                                        <option value="2020">5</option>
                                     </select>
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input"
-                                        id="currentWork${professionCount}">
-                                    <label class="custom-control-label" for="currentWork${professionCount}">Currently
+                                    <input type="checkbox" class="custom-control-input" name="running[]" id="running[]">
+                                    <label class="custom-control-label" for="running[]">Currently
                                         Here</label>
                                 </div>
 
@@ -655,25 +653,47 @@
         document.getElementById('add-education-btn').addEventListener('click', function() {
             const educationSection = document.getElementById('education-section');
             const newEducationFields = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
-                <div class="input-group-prepend">
-                    <span class="input-group-text mdi mdi-school" id="basic-addon3"><span class="ml-2">College/University Name</span></span>
-                </div>
-                <input type="text" class="form-control" placeholder="School/College/University Name" aria-label="College/University Name">
-                </div>
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">School/College/University Name</span></span>
+                                    </div>
+                                    <input type="text" name="course_name[]" class="form-control" placeholder="School/College/University Name"
+                                        aria-label="College/University Name" aria-describedby="basic-addon1">
+                                </div>
 
-                <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text mdi mdi-school" id="basic-addon3"><span class="ml-2">Degree</span></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Degree" aria-label="Degree">
-                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-account-circle" id="basic-addon3"><span
+                                                class="ml-2">Title</span></span>
+                                    </div>
+                                    <select class="form-control" name="title[]">
+                                        <option value="ssc">SSC</option>
+                                        <option value="shc">HSC</option>
+                                        <option value="hon's">Hon's</option>
+                                        <option value="masters">Master's</option>
+                                    </select>
+                                </div>
 
-                <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text mdi mdi-calendar" id="basic-addon3"><span class="ml-2">Year of Graduation</span></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Year of Graduation" aria-label="Year of Graduation">
-                </div>`;
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-map-marker-radius" id="basic-addon3"><span
+                                                class="ml-2">Year of graduation</span></span>
+                                    </div>
+                                    <select class="form-control" name="passingyear[]">
+                                        <option value="2020">1</option>
+                                        <option value="2020">2</option>
+                                        <option value="2020">3</option>
+                                        <option value="2020">4</option>
+                                        <option value="2020">5</option>
+                                    </select>
+                                </div>
+
+                                <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
+                                    <input type="checkbox" class="custom-control-input" name="running[]" id="running[]">
+                                    <label class="custom-control-label" for="running[]">Currently
+                                        Here</label>
+                                </div>`;
+
             educationSection.insertAdjacentHTML('beforeend', newEducationFields);
         });
     </script>
