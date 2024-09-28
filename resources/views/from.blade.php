@@ -761,6 +761,7 @@
                 </div>
             </div>
             <script>
+                let politicalStatuscheck = 1;
                 document.getElementById('politicalStatus_addMore').addEventListener('click', function() {
                     const newPoliticalStatus = `<div class="political-status-group" style="border-top: 1px solid grey;">
                         <div class="input-group mb-3">
@@ -800,11 +801,12 @@
                         </div>
 
                         <div class="custom-control custom-checkbox d-inline-block mb-3">
-                        <input type="checkbox" class="custom-control-input" id="currently-here-${Date.now()}">
-                        <label class="custom-control-label" for="currently-here-${Date.now()}">Currently Here</label>
+                        <input type="checkbox" class="custom-control-input" id="currently${politicalStatuscheck}">
+                        <label class="custom-control-label" for="currently${politicalStatuscheck}">Currently Here</label>
                         </div>
                     </div>`;
                     document.getElementById('political-status-container').insertAdjacentHTML('beforeend', newPoliticalStatus);
+                    politicalStatuscheck++;
                 });
             </script>
             <!-- education+Political Status end -->
@@ -870,7 +872,7 @@
                     </div>
                 </div>
     <script>
-        let bangladeshpoliticalcheck = 1;
+        let bangladeshpoliticalchecke = 1;
         document.getElementById('add-bangladesh_political_status-btn').addEventListener('click', function() {
             const bangladeshpoliticalstatus = document.getElementById('bangladeshpoliticalstatus');
             const bangladeshpoliticalstatusfield = `<div id="bangladeshpoliticalstatus" style="border-top: 1px solid grey;">
@@ -911,12 +913,12 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="Currently${bangladeshpoliticalcheck}">
-                                    <label class="custom-control-label" for="Currently${bangladeshpoliticalcheck}">Curently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="currently${bangladeshpoliticalchecke}">
+                                    <label class="custom-control-label" for="currently${bangladeshpoliticalchecke}">Curently Here</label>
                                 </div>
                             </div>`;
                             bangladeshpoliticalstatus.insertAdjacentHTML('beforeend', bangladeshpoliticalstatusfield);
-                            bangladeshpoliticalcheck++;
+                            bangladeshpoliticalchecke++;
         });
     </script>
 
@@ -988,6 +990,7 @@
                 </div>
             </div>
             <script>
+                let bussinescheck = 1;
                 document.getElementById('bussiness_add_More').addEventListener('click', function() {
                     
             const bussiness_containt = document.getElementById('bussiness_containt');                    
@@ -1039,10 +1042,11 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
-                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="currently${bussinescheck}">
+                                    <label class="custom-control-label" for="currently${bussinescheck}">Currently Here</label>
                                 </div>`;
                     document.getElementById('bussiness_containt').insertAdjacentHTML('beforeend', bussiness);
+                    bussinescheck++;
                 });
             </script>
             <!-- Bangladesh Political Status + Business end -->
@@ -1183,7 +1187,7 @@
                             <h2>Living status</h2>
                         </div>
                         <div class="card-body">
-                            <div id="bussiness_containt">
+                            <div id="living_containt">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -1243,11 +1247,11 @@
                 </div>
             </div>
             <script>
-                document.getElementById('bussiness_add_More').addEventListener('click', function() {
+                document.getElementById('living_add_More').addEventListener('click', function() {
                     
-            const bussiness_containt = document.getElementById('bussiness_containt');                    
+            const living_containt = document.getElementById('living_containt');                    
 
-                    const bussiness = `<div id="political-status-container" style="border-top: 1px solid grey;">
+                    const living = `<div id="political-status-container" style="border-top: 1px solid grey;">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -1297,7 +1301,7 @@
                                     <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
                                     <label class="custom-control-label" for="customCheckPrimaryone">Currently Here</label>
                                 </div>`;
-                    document.getElementById('bussiness_containt').insertAdjacentHTML('beforeend', bussiness);
+                    document.getElementById('living_containt').insertAdjacentHTML('beforeend', living);
                 });
             </script>
             <!-- Probashi Political Status + Living status end -->
