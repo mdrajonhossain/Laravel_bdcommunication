@@ -650,6 +650,7 @@
                     </div>
                 </div>
     <script>
+        let educationCount = 1;
         document.getElementById('add-education-btn').addEventListener('click', function() {
             const educationSection = document.getElementById('education-section');
             const newEducationFields = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
@@ -689,12 +690,13 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" name="running[]" id="running[]">
-                                    <label class="custom-control-label" for="running[]">Currently
+                                    <input type="checkbox" class="custom-control-input" name="running[]" id="Currently${educationCount}">
+                                    <label class="custom-control-label" for="Currently${educationCount}">Currently
                                         Here</label>
                                 </div>`;
 
             educationSection.insertAdjacentHTML('beforeend', newEducationFields);
+            educationCount++;
         });
     </script>
 
@@ -868,6 +870,7 @@
                     </div>
                 </div>
     <script>
+        let bangladeshpoliticalcheck = 1;
         document.getElementById('add-bangladesh_political_status-btn').addEventListener('click', function() {
             const bangladeshpoliticalstatus = document.getElementById('bangladeshpoliticalstatus');
             const bangladeshpoliticalstatusfield = `<div id="bangladeshpoliticalstatus" style="border-top: 1px solid grey;">
@@ -908,11 +911,12 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimarytowo">
-                                    <label class="custom-control-label" for="customCheckPrimarytowo">Curently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="Currently${bangladeshpoliticalcheck}">
+                                    <label class="custom-control-label" for="Currently${bangladeshpoliticalcheck}">Curently Here</label>
                                 </div>
                             </div>`;
                             bangladeshpoliticalstatus.insertAdjacentHTML('beforeend', bangladeshpoliticalstatusfield);
+                            bangladeshpoliticalcheck++;
         });
     </script>
 
@@ -1046,7 +1050,7 @@
 
 
 
-            <!-- Probashi Political Status + Living status end -->
+            <!-- Probashi Political Status + Living status start -->
              <div class="row">
                 <div class="col-xl-6">
                     <!-- Basic Example -->
@@ -1114,6 +1118,7 @@
                     </div>
                 </div>
     <script>
+        let probashiPoliticalcheck = 1;
         document.getElementById('add-probashi_political_status-btn').addEventListener('click', function() {
             const probashi_political_status = document.getElementById('probashi_political_status');
             const probashi_political_status_field = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
@@ -1162,10 +1167,11 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" name="courrently_political_osition[]" class="custom-control-input" id="courrently_political_osition">
-                                    <label class="custom-control-label" for="courrently_political_osition">Courrently Political Position</label>
+                                    <input type="checkbox" name="courrently_political_osition[]" class="custom-control-input" id="courrently${probashiPoliticalcheck}">
+                                    <label class="custom-control-label" for="courrently${probashiPoliticalcheck}">Courrently Political Position</label>
                                 </div>`;
                                 probashi_political_status.insertAdjacentHTML('beforeend', probashi_political_status_field);
+                                probashiPoliticalcheck++;
         });
     </script>
 
