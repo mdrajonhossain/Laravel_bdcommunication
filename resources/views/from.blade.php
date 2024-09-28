@@ -799,7 +799,7 @@
                         </div>
                         <div class="card-body">
 
-                            <div id="education-section">
+                            <div id="bangladeshpoliticalstatus">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -843,34 +843,56 @@
                                 <br>
 
                             </div>
-                            <button id="add-education-btn" class="btn btn-primary">Add More</button>
+                            <button id="add-bangladesh_political_status-btn" class="btn btn-primary">Add More</button>
                         </div>
                     </div>
                 </div>
     <script>
-        document.getElementById('add-education-btn').addEventListener('click', function() {
-            const educationSection = document.getElementById('education-section');
-            const newEducationFields = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
-                <div class="input-group-prepend">
-                    <span class="input-group-text mdi mdi-school" id="basic-addon3"><span class="ml-2">College/University Name</span></span>
-                </div>
-                <input type="text" class="form-control" placeholder="School/College/University Name" aria-label="College/University Name">
-                </div>
+        document.getElementById('add-bangladesh_political_status-btn').addEventListener('click', function() {
+            const bangladeshpoliticalstatus = document.getElementById('bangladeshpoliticalstatus');
+            const bangladeshpoliticalstatusfield = `<div id="bangladeshpoliticalstatus" style="border-top: 1px solid grey;">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Political Party Name</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Political Party Name"
+                                        aria-label="College/University Name" aria-describedby="basic-addon1">
+                                </div>
 
-                <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text mdi mdi-school" id="basic-addon3"><span class="ml-2">Degree</span></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Degree" aria-label="Degree">
-                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
+                                                class="ml-2">Position</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Position" aria-label="Position"
+                                        aria-describedby="basic-addon1">
+                                </div>
 
-                <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text mdi mdi-calendar" id="basic-addon3"><span class="ml-2">Year of Graduation</span></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Year of Graduation" aria-label="Year of Graduation">
-                </div>`;
-            educationSection.insertAdjacentHTML('beforeend', newEducationFields);
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                                class="ml-2">Started on</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Started on"
+                                        aria-label="Started on" aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                                class="ml-2">End on</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="End on" aria-label="End on"
+                                        aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimarytowo">
+                                    <label class="custom-control-label" for="customCheckPrimarytowo">Curently Here</label>
+                                </div>
+                            </div>`;
+                            bangladeshpoliticalstatus.insertAdjacentHTML('beforeend', bangladeshpoliticalstatusfield);
         });
     </script>
 
@@ -882,7 +904,7 @@
                             <h2>Business</h2>
                         </div>
                         <div class="card-body">
-                            <div id="political-status-container">
+                            <div id="bussiness_containt">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -935,57 +957,68 @@
                                 <br>
 
                             </div>
-                            <a href="javascript:void(0);" id="politicalStatus_addMore" class="btn btn-primary ml-2">Add More</a>
+                            <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add More</a>
                         </div>
                     </div>
 
                 </div>
             </div>
             <script>
-                document.getElementById('politicalStatus_addMore').addEventListener('click', function() {
-                    const newPoliticalStatus = `<div class="political-status-group" style="border-top: 1px solid grey;">
-                        <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text mdi mdi-home-modern">
-                            <span class="ml-2">Political Party Name</span>
-                            </span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Political Party Name" aria-label="Political Party Name">
-                        </div>
+                document.getElementById('bussiness_add_More').addEventListener('click', function() {
+                    
+            const bussiness_containt = document.getElementById('bussiness_containt');                    
 
-                        <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text mdi mdi-dumbbell">
-                            <span class="ml-2">Position</span>
-                            </span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Position" aria-label="Position">
-                        </div>
+                    const bussiness = `<div id="political-status-container" style="border-top: 1px solid grey;">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Business Name</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Business Name"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
 
-                        <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text mdi mdi-timer-sand">
-                            <span class="ml-2">Started on</span>
-                            </span>
-                        </div>
-                        <input type="date" class="form-control" aria-label="Started on">
-                        </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
+                                                class="ml-2">Catagory</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Catagory" aria-label="Catagory"
+                                        aria-describedby="basic-addon1">
+                                </div>
 
-                        <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text mdi mdi-timer-sand">
-                            <span class="ml-2">End on</span>
-                            </span>
-                        </div>
-                        <input type="date" class="form-control" aria-label="End on">
-                        </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
+                                                class="ml-2">Position</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Position" aria-label="Position"
+                                        aria-describedby="basic-addon1">
+                                </div>
 
-                        <div class="custom-control custom-checkbox d-inline-block mb-3">
-                        <input type="checkbox" class="custom-control-input" id="currently-here-${Date.now()}">
-                        <label class="custom-control-label" for="currently-here-${Date.now()}">Currently Here</label>
-                        </div>
-                    </div>`;
-                    document.getElementById('political-status-container').insertAdjacentHTML('beforeend', newPoliticalStatus);
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                                class="ml-2">Started on</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Started on"
+                                        aria-label="Started on" aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                                class="ml-2">End on</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="End on" aria-label="End on"
+                                        aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
+                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently Here</label>
+                                </div>`;
+                    document.getElementById('bussiness_containt').insertAdjacentHTML('beforeend', bussiness);
                 });
             </script>
             <!-- Bangladesh Political Status + Business end -->
