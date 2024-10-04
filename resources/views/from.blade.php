@@ -981,8 +981,8 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
-                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently
+                                    <input type="checkbox" class="custom-control-input" id="bussinescheckb">
+                                    <label class="custom-control-label" for="bussinescheckb">Currently
                                         Here</label>
                                 </div>
                                 <br>
@@ -996,7 +996,7 @@
                 </div>
             </div>
             <script>
-            let bussinescheck = 1;
+            let bussinescheckb = 1;
             document.getElementById('bussiness_add_More').addEventListener('click', function() {
 
                 const bussiness_containt = document.getElementById('bussiness_containt');
@@ -1048,11 +1048,11 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="currently${bussinescheck}">
-                                    <label class="custom-control-label" for="currently${bussinescheck}">Currently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="currently${bussinescheckb}">
+                                    <label class="custom-control-label" for="currently${bussinescheckb}">Currently Here</label>
                                 </div>`;
                 document.getElementById('bussiness_containt').insertAdjacentHTML('beforeend', bussiness);
-                bussinescheck++;
+                bussinescheckb++;
             });
             </script>
             <!-- Bangladesh Political Status + Business end -->
@@ -1193,7 +1193,7 @@
 
 
 
-                    <div class="card card-default">                        
+                    <div class="card card-default">
                         <div class="card-body">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="probashiCheckbox"
@@ -1201,70 +1201,70 @@
                                 <label class="form-check-label" for="probashiCheckbox">Add Probashi</label>
                             </div>
                         </div>
-                        </div>
-                        <script>
-                        function probashiCheckbox() {
-                            var checkbox = document.getElementById("probashiCheckbox");
-                            var content = document.getElementById("probashi");
-                            if (checkbox.checked) {
-                                content.style.display = "block";
-                            } else {
-                                content.style.display = "none";
-                            }
+                    </div>
+                    <script>
+                    function probashiCheckbox() {
+                        var checkbox = document.getElementById("probashiCheckbox");
+                        var content = document.getElementById("probashi");
+                        if (checkbox.checked) {
+                            content.style.display = "block";
+                        } else {
+                            content.style.display = "none";
                         }
-                        </script>
+                    }
+                    </script>
 
-                        <!-- Iconic Input Group -->
-                        <div class="card card-default" id="probashi" style="display: none;">
+                    <!-- Iconic Input Group -->
+                    <div class="card card-default" id="probashi" style="display: none;">
 
 
                         <div class="card-body">
-                                <div id="living_containt">
+                            <div id="living_containt">
 
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">Address Line</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Address Line"
-                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Address Line</span></span>
                                     </div>
+                                    <input type="text" class="form-control" placeholder="Address Line"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
 
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">House Number</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="House Number"
-                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">House Number</span></span>
                                     </div>
+                                    <input type="text" class="form-control" placeholder="House Number"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
 
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">City</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="City"
-                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">City</span></span>
                                     </div>
+                                    <input type="text" class="form-control" placeholder="City"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
 
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">Zip code</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Zip code"
-                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Zip code</span></span>
                                     </div>
+                                    <input type="text" class="form-control" placeholder="Zip code"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
 
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">Country</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Country"
-                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Country</span></span>
                                     </div>
+                                    <input type="text" class="form-control" placeholder="Country"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
                             </div>
                         </div>
 
@@ -1272,101 +1272,137 @@
 
 
                         <div class="card-header">
-                                <h2>Living status</h2>
+                            <h2>Living status</h2>
+                        </div>
+                        <div class="card-body">
+                            <div id="Citizen_containt">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Citizen</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Citizen"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div id="living_containt">
+                            <a href="javascript:void(0);" id="Citizen_add_More" class="btn btn-primary ml-2">Add
+                                More</a>
+                        </div>                        
+                        <script>
+                        document.getElementById('Citizen_add_More').addEventListener('click', function() {
+                            const Citizen_containt = document.getElementById('Citizen_containt');
+                            const Citizen_containt_field = ` <div id="Citizen_containt" style="border-top: 1px solid grey;">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">Citizen</span></span>
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3">
+                                            <span class="ml-2">Citizen</span></span>
                                         </div>
                                         <input type="text" class="form-control" placeholder="Citizen"
                                             aria-label="Business Name" aria-describedby="basic-addon1">
                                     </div>
+                                </div>`;
+                                Citizen_containt.insertAdjacentHTML('beforeend', Citizen_containt_field);
+                        });
+                        </script>
+
+
+
+                        <div class="card-body">
+                            <div id="visa_containt">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Visa</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Visa"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
                                 </div>
-                                <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add More</a>
                             </div>
-
-                            <div class="card-body">
-                                <div id="living_containt">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">Visa</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Visa"
-                                            aria-label="Business Name" aria-describedby="basic-addon1">
-                                    </div>
-                                </div>
-                                <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add More</a>
-                            </div>
-
-                           
-
-
-                            <div class="card-header">
-                                <h2>Probashi Political Status</h2>
-                            </div>
-                            <div class="card-body">
-                                <div id="living_containt">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                    class="ml-2">Political Party Name</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Political Party Name"
-                                            aria-label="Political Party Name" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
-                                                    class="ml-2">Started on </span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Started on"
-                                            aria-label="Started on" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
-                                                    class="ml-2">End on</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="End on"
-                                            aria-label="End on" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
-                                                    class="ml-2">Country</span></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Country"
-                                            aria-label="Country" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
-                                        <label class="custom-control-label" for="customCheckPrimaryone">Currently
-                                            Here</label>
-                                    </div>
-                                    <br>
-
-                                </div>
-                                <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add
-                                    More</a>
-                            </div>
+                            <a href="javascript:void(0);" id="visa_add_More" class="btn btn-primary ml-2">Add
+                                More</a>
                         </div>
+                        <script>
+                        document.getElementById('visa_add_More').addEventListener('click', function() {
+                            const visa_containt = document.getElementById('visa_containt');
+                            const visa_containt_field = `<div id="visa_containt" style="border-top: 1px solid grey;">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Visa</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Visa"
+                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                </div>
+                            </div>`;
+                            visa_containt.insertAdjacentHTML('beforeend', visa_containt_field);
+                        });
+                        </script>
 
+
+
+
+                        <div class="card-header">
+                            <h2>Probashi Political Status</h2>
+                        </div>
+                        <div class="card-body">
+                            <div id="living_containt">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                class="ml-2">Political Party Name</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Political Party Name"
+                                        aria-label="Political Party Name" aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
+                                                class="ml-2">Started on </span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Started on"
+                                        aria-label="Started on" aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
+                                                class="ml-2">End on</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="End on" aria-label="End on"
+                                        aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                                class="ml-2">Country</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Country" aria-label="Country"
+                                        aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
+                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently
+                                        Here</label>
+                                </div>
+                                <br>
+
+                            </div>
+                            <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add
+                                More</a>
+                        </div>
                     </div>
+
                 </div>
-                <script>
-                document.getElementById('living_add_More').addEventListener('click', function() {
+            </div>
+            <script>
+            document.getElementById('living_add_More').addEventListener('click', function() {
 
-                    const living_containt = document.getElementById('living_containt');
+                const living_containt = document.getElementById('living_containt');
 
-                    const living = `<div id="political-status-container" style="border-top: 1px solid grey;">
+                const living = `<div id="political-status-container" style="border-top: 1px solid grey;">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -1416,124 +1452,124 @@
                                     <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
                                     <label class="custom-control-label" for="customCheckPrimaryone">Currently Here</label>
                                 </div>`;
-                    document.getElementById('living_containt').insertAdjacentHTML('beforeend', living);
-                });
+                document.getElementById('living_containt').insertAdjacentHTML('beforeend', living);
+            });
+            </script>
+            <!-- Probashi Political Status + Living status end -->
+
+
+
+
+
+            <a class="btn btn-primary" id="submitbtn">Submit</a>
+
+
+
+
+            <footer class="footer mt-auto">
+                <div class="copyright bg-white">
+                    <p>
+                        &copy; <span id="copy-year"></span> Copyright BDCommunication by <a class="text-primary"
+                            href="https://www.BDCommunication.com" target="_blank">BDCommunication</a>.
+                    </p>
+                </div>
+                <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("copy-year").innerHTML = year;
                 </script>
-                <!-- Probashi Political Status + Living status end -->
+            </footer>
 
-
-
-
-
-                <a class="btn btn-primary" id="submitbtn">Submit</a>
-
-
-
-
-                <footer class="footer mt-auto">
-                    <div class="copyright bg-white">
-                        <p>
-                            &copy; <span id="copy-year"></span> Copyright BDCommunication by <a class="text-primary"
-                                href="https://www.BDCommunication.com" target="_blank">BDCommunication</a>.
-                        </p>
-                    </div>
-                    <script>
-                    var d = new Date();
-                    var year = d.getFullYear();
-                    document.getElementById("copy-year").innerHTML = year;
-                    </script>
-                </footer>
-
-            </div>
         </div>
+    </div>
 
 
 
-        <script src="{{asset('newdash/plugins/jquery/jquery.min.js')}}"></script>
-        <script src="{{asset('newdash/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('newdash/plugins/simplebar/simplebar.min.js')}}"></script>
-        <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
-        <script src="{{asset('newdash/plugins/apexcharts/apexcharts.js')}}"></script>
-        <script src="{{asset('newdash/plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js')}}"></script>
-        <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
-        <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-world-mill.js')}}"></script>
-        <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-us-aea.js')}}"></script>
-        <script src="{{asset('newdash/plugins/daterangepicker/moment.min.js')}}"></script>
-        <script src="{{asset('newdash/plugins/daterangepicker/daterangepicker.js')}}"></script>
-        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-        <script src="{{asset('newdash/plugins/toaster/toastr.min.js')}}"></script>
-        <script src="{{asset('newdash/js/mono.js')}}"></script>
-        <script src="{{asset('newdash/js/chart.js')}}"></script>
-        <script src="{{asset('newdash/js/map.js')}}"></script>
-        <script src="{{asset('newdash/js/custom.js')}}"></script>
+    <script src="{{asset('newdash/plugins/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('newdash/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('newdash/plugins/simplebar/simplebar.min.js')}}"></script>
+    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+    <script src="{{asset('newdash/plugins/apexcharts/apexcharts.js')}}"></script>
+    <script src="{{asset('newdash/plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
+    <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-world-mill.js')}}"></script>
+    <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-us-aea.js')}}"></script>
+    <script src="{{asset('newdash/plugins/daterangepicker/moment.min.js')}}"></script>
+    <script src="{{asset('newdash/plugins/daterangepicker/daterangepicker.js')}}"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="{{asset('newdash/plugins/toaster/toastr.min.js')}}"></script>
+    <script src="{{asset('newdash/js/mono.js')}}"></script>
+    <script src="{{asset('newdash/js/chart.js')}}"></script>
+    <script src="{{asset('newdash/js/map.js')}}"></script>
+    <script src="{{asset('newdash/js/custom.js')}}"></script>
 
-        <script>
-        $('#submitbtn').on('click', function() {
+    <script>
+    $('#submitbtn').on('click', function() {
 
-            var Userinfo = {
-                "firstName": $('#first_name').val(),
-                "lastName": $('#last_name').val(),
-                "email": $('#email').val(),
-                "phone": $('#phone').val(),
-                "password": $('#password').val(),
-                "dateOfBirth": $('#date_birth').val(),
-                "religious": $('#religious').val()
-            }
+        var Userinfo = {
+            "firstName": $('#first_name').val(),
+            "lastName": $('#last_name').val(),
+            "email": $('#email').val(),
+            "phone": $('#phone').val(),
+            "password": $('#password').val(),
+            "dateOfBirth": $('#date_birth').val(),
+            "religious": $('#religious').val()
+        }
 
-            var profession = {
-                "companyName": $("input[name='company_name[]']").map(function() {
-                    return $(this).val();
-                }).get(),
-                "position": $("input[name='position[]']").map(function() {
-                    return $(this).val();
-                }).get(),
-                "started_on": $("input[name='started_on[]']").map(function() {
-                    return $(this).val();
-                }).get(),
-                "end_one": $("input[name='end_one[]']").map(function() {
-                    return $(this).val();
-                }).get(),
-                "currently": $("input[name='currently[]']").map(function() {
-                    return $(this).val();
-                }).get()
-            };
+        var profession = {
+            "companyName": $("input[name='company_name[]']").map(function() {
+                return $(this).val();
+            }).get(),
+            "position": $("input[name='position[]']").map(function() {
+                return $(this).val();
+            }).get(),
+            "started_on": $("input[name='started_on[]']").map(function() {
+                return $(this).val();
+            }).get(),
+            "end_one": $("input[name='end_one[]']").map(function() {
+                return $(this).val();
+            }).get(),
+            "currently": $("input[name='currently[]']").map(function() {
+                return $(this).val();
+            }).get()
+        };
 
-            var parmanentAddress = {
-                "addressline": $('.permanent #addressline').val(),
-                "house_number": $('.permanent #house_number').val(),
-                "zip_code": $('.permanent #zip_code').val(),
-                "devision": $('.permanent #devision').val(),
-                "districts": $('.permanent #districts').val(),
-                "upazilas": $('.permanent #upazilas').val(),
-                "poroshaba": $('.permanent #poroshaba').val(),
-                "unions": $('.permanent #unions').val(),
-                "word": $('.permanent #word').val(),
-                "country": $('.permanent #country').val(),
-                "citizen": $('.permanent #citizen').val()
-            }
+        var parmanentAddress = {
+            "addressline": $('.permanent #addressline').val(),
+            "house_number": $('.permanent #house_number').val(),
+            "zip_code": $('.permanent #zip_code').val(),
+            "devision": $('.permanent #devision').val(),
+            "districts": $('.permanent #districts').val(),
+            "upazilas": $('.permanent #upazilas').val(),
+            "poroshaba": $('.permanent #poroshaba').val(),
+            "unions": $('.permanent #unions').val(),
+            "word": $('.permanent #word').val(),
+            "country": $('.permanent #country').val(),
+            "citizen": $('.permanent #citizen').val()
+        }
 
-            var presentAddress = {
-                "addressline": $('.present #addressline').val(),
-                "house_number": $('.present #house_number').val(),
-                "zip_code": $('.present #zip_code').val(),
-                "devision": $('.present #devision').val(),
-                "districts": $('.present #districts').val(),
-                "upazilas": $('.present #upazilas').val(),
-                "poroshaba": $('.present #poroshaba').val(),
-                "unions": $('.present #unions').val(),
-                "word": $('.present #word').val(),
-                "country": $('.present #country').val(),
-                "citizen": $('.present #citizen').val()
-            }
+        var presentAddress = {
+            "addressline": $('.present #addressline').val(),
+            "house_number": $('.present #house_number').val(),
+            "zip_code": $('.present #zip_code').val(),
+            "devision": $('.present #devision').val(),
+            "districts": $('.present #districts').val(),
+            "upazilas": $('.present #upazilas').val(),
+            "poroshaba": $('.present #poroshaba').val(),
+            "unions": $('.present #unions').val(),
+            "word": $('.present #word').val(),
+            "country": $('.present #country').val(),
+            "citizen": $('.present #citizen').val()
+        }
 
-            console.log(Userinfo);
-            console.log(profession);
+        console.log(Userinfo);
+        console.log(profession);
 
-            console.log(parmanentAddress);
-            console.log(presentAddress)
+        console.log(parmanentAddress);
+        console.log(presentAddress)
 
-        });
-        </script>
+    });
+    </script>
 
 </body>
 
