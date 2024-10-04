@@ -717,8 +717,8 @@
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
                                                 class="ml-2">Political Party Name</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Company Name"
-                                        aria-label="Company Name" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" name="ps_political_party_name[]" placeholder="Political Party Name"
+                                        aria-label="Political Party Name" aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="input-group mb-3">
@@ -726,7 +726,7 @@
                                         <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
                                                 class="ml-2">Position</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Position" aria-label="Position"
+                                    <input type="text" class="form-control" name="ps_position[]" placeholder="Position" aria-label="Position"
                                         aria-describedby="basic-addon1">
                                 </div>
 
@@ -735,7 +735,7 @@
                                         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
                                                 class="ml-2">Started on</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Started on"
+                                    <input type="date" class="form-control" name="ps_startedon[]" placeholder="Started on"
                                         aria-label="Started on" aria-describedby="basic-addon1">
                                 </div>
 
@@ -744,12 +744,12 @@
                                         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
                                                 class="ml-2">End on</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="End on" aria-label="End on"
+                                    <input type="date" class="form-control" nam="ps_end_on" placeholder="End on" aria-label="End on"
                                         aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="politicalcheck[]">
+                                    <input type="checkbox" class="custom-control-input" name="ps_political_status[]" id="politicalcheck[]">
                                     <label class="custom-control-label" for="politicalcheck[]">Curently Here</label>
                                 </div>
                                 <br>
@@ -772,7 +772,7 @@
                             <span class="ml-2">Political Party Name</span>
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Political Party Name" aria-label="Political Party Name">
+                        <input type="text" class="form-control" name="ps_political_party_name[]" placeholder="Political Party Name" aria-label="Political Party Name">
                         </div>
 
                         <div class="input-group mb-3">
@@ -781,7 +781,7 @@
                             <span class="ml-2">Position</span>
                             </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Position" aria-label="Position">
+                        <input type="text" class="form-control" name="ps_position[]" placeholder="Position" aria-label="Position">
                         </div>
 
                         <div class="input-group mb-3">
@@ -790,7 +790,7 @@
                             <span class="ml-2">Started on</span>
                             </span>
                         </div>
-                        <input type="date" class="form-control" aria-label="Started on">
+                        <input type="date" class="form-control" name="ps_startedon[]" aria-label="Started on">
                         </div>
 
                         <div class="input-group mb-3">
@@ -799,11 +799,11 @@
                             <span class="ml-2">End on</span>
                             </span>
                         </div>
-                        <input type="date" class="form-control" aria-label="End on">
+                        <input type="date" class="form-control" nam="ps_end_on" aria-label="End on">
                         </div>
 
                         <div class="custom-control custom-checkbox d-inline-block mb-3">
-                        <input type="checkbox" class="custom-control-input" id="currently${politicalStatuscheck}">
+                        <input type="checkbox" class="custom-control-input" name="ps_political_status[]" id="currently${politicalStatuscheck}">
                         <label class="custom-control-label" for="currently${politicalStatuscheck}">Currently Here</label>
                         </div>
                     </div>`;
@@ -1573,7 +1573,7 @@
             passingyear: document.getElementsByName('passingyear[]'),
             running: document.getElementsByName('running[]'),
         };
-
+        
         let educationInfo = [];
         for (let i = 0; i < eduInfo.course_name.length; i++) {
             educationInfo.push({
@@ -1585,15 +1585,48 @@
         }
 
         console.log(educationInfo);
+
+
+
+const politicalStat = {
+    political_party_name: document.getElementsByName('ps_political_party_name[]'),
+    position: document.getElementsByName('ps_position[]'),
+    startedon: document.getElementsByName('ps_startedon[]'),
+    end_on: document.getElementsByName('ps_end_on[]'),
+    political_status: document.getElementsByName('ps_political_status[]')
+};
+
+// Collect political status information
+let politicalSstatus = [];
+const maxLength = Math.max(
+    politicalStat.political_party_name.length,
+    politicalStat.position.length,
+    politicalStat.startedon.length,
+    politicalStat.end_on.length,
+    politicalStat.political_status.length
+);
+
+for (let i = 0; i < maxLength; i++) {
+    politicalSstatus.push({
+        political_party_name: politicalStat.political_party_name[i] ? politicalStat.political_party_name[i].value : '',
+        position: politicalStat.position[i] ? politicalStat.position[i].value : '',
+        startedon: politicalStat.startedon[i] ? politicalStat.startedon[i].value : '',
+        end_on: politicalStat.end_on[i] ? politicalStat.end_on[i].value : '',
+        political_status: politicalStat.political_status[i] ? (politicalStat.political_status[i].checked ? 'Yes' : 'No') : 'No'
+    });
+}
+
+console.log(politicalSstatus);
+
   
 
 
 
-        // console.log(Userinfo);
-        // console.log(profession);
+        console.log(Userinfo);
+        console.log(profession);
 
-        // console.log(parmanentAddress);
-        // console.log(presentAddress)
+        console.log(parmanentAddress);
+        console.log(presentAddress)
 
     });
     </script>
