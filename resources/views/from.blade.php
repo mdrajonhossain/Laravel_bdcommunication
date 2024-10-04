@@ -607,7 +607,8 @@
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
                                                 class="ml-2">School/College/University Name</span></span>
                                     </div>
-                                    <input type="text" name="course_name[]" class="form-control" placeholder="School/College/University Name"
+                                    <input type="text" name="course_name[]" class="form-control"
+                                        placeholder="School/College/University Name"
                                         aria-label="College/University Name" aria-describedby="basic-addon1">
                                 </div>
 
@@ -649,11 +650,11 @@
                         </div>
                     </div>
                 </div>
-    <script>
-        let educationCount = 1;
-        document.getElementById('add-education-btn').addEventListener('click', function() {
-            const educationSection = document.getElementById('education-section');
-            const newEducationFields = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
+                <script>
+                let educationCount = 1;
+                document.getElementById('add-education-btn').addEventListener('click', function() {
+                    const educationSection = document.getElementById('education-section');
+                    const newEducationFields = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
                                                 class="ml-2">School/College/University Name</span></span>
@@ -695,10 +696,10 @@
                                         Here</label>
                                 </div>`;
 
-            educationSection.insertAdjacentHTML('beforeend', newEducationFields);
-            educationCount++;
-        });
-    </script>
+                    educationSection.insertAdjacentHTML('beforeend', newEducationFields);
+                    educationCount++;
+                });
+                </script>
 
 
 
@@ -754,16 +755,17 @@
                                 <br>
 
                             </div>
-                            <a href="javascript:void(0);" id="politicalStatus_addMore" class="btn btn-primary ml-2">Add More</a>
+                            <a href="javascript:void(0);" id="politicalStatus_addMore" class="btn btn-primary ml-2">Add
+                                More</a>
                         </div>
                     </div>
 
                 </div>
             </div>
             <script>
-                let politicalStatuscheck = 1;
-                document.getElementById('politicalStatus_addMore').addEventListener('click', function() {
-                    const newPoliticalStatus = `<div class="political-status-group" style="border-top: 1px solid grey;">
+            let politicalStatuscheck = 1;
+            document.getElementById('politicalStatus_addMore').addEventListener('click', function() {
+                const newPoliticalStatus = `<div class="political-status-group" style="border-top: 1px solid grey;">
                         <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text mdi mdi-home-modern">
@@ -805,9 +807,10 @@
                         <label class="custom-control-label" for="currently${politicalStatuscheck}">Currently Here</label>
                         </div>
                     </div>`;
-                    document.getElementById('political-status-container').insertAdjacentHTML('beforeend', newPoliticalStatus);
-                    politicalStatuscheck++;
-                });
+                document.getElementById('political-status-container').insertAdjacentHTML('beforeend',
+                    newPoliticalStatus);
+                politicalStatuscheck++;
+            });
             </script>
             <!-- education+Political Status end -->
 
@@ -862,7 +865,8 @@
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
                                     <input type="checkbox" class="custom-control-input" id="customCheckPrimarytowo">
-                                    <label class="custom-control-label" for="customCheckPrimarytowo">Curently Here</label>
+                                    <label class="custom-control-label" for="customCheckPrimarytowo">Curently
+                                        Here</label>
                                 </div>
                                 <br>
 
@@ -871,11 +875,11 @@
                         </div>
                     </div>
                 </div>
-    <script>
-        let bangladeshpoliticalchecke = 1;
-        document.getElementById('add-bangladesh_political_status-btn').addEventListener('click', function() {
-            const bangladeshpoliticalstatus = document.getElementById('bangladeshpoliticalstatus');
-            const bangladeshpoliticalstatusfield = `<div id="bangladeshpoliticalstatus" style="border-top: 1px solid grey;">
+                <script>
+                let bangladeshpoliticalchecke = 1;
+                document.getElementById('add-bangladesh_political_status-btn').addEventListener('click', function() {
+                    const bangladeshpoliticalstatus = document.getElementById('bangladeshpoliticalstatus');
+                    const bangladeshpoliticalstatusfield = `<div id="bangladeshpoliticalstatus" style="border-top: 1px solid grey;">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -917,10 +921,10 @@
                                     <label class="custom-control-label" for="currently${bangladeshpoliticalchecke}">Curently Here</label>
                                 </div>
                             </div>`;
-                            bangladeshpoliticalstatus.insertAdjacentHTML('beforeend', bangladeshpoliticalstatusfield);
-                            bangladeshpoliticalchecke++;
-        });
-    </script>
+                    bangladeshpoliticalstatus.insertAdjacentHTML('beforeend', bangladeshpoliticalstatusfield);
+                    bangladeshpoliticalchecke++;
+                });
+                </script>
 
 
                 <div class="col-xl-6">
@@ -978,24 +982,26 @@
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
                                     <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
-                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently Here</label>
+                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently
+                                        Here</label>
                                 </div>
                                 <br>
 
                             </div>
-                            <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add More</a>
+                            <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add
+                                More</a>
                         </div>
                     </div>
 
                 </div>
             </div>
             <script>
-                let bussinescheck = 1;
-                document.getElementById('bussiness_add_More').addEventListener('click', function() {
-                    
-            const bussiness_containt = document.getElementById('bussiness_containt');                    
+            let bussinescheck = 1;
+            document.getElementById('bussiness_add_More').addEventListener('click', function() {
 
-                    const bussiness = `<div id="political-status-container" style="border-top: 1px solid grey;">
+                const bussiness_containt = document.getElementById('bussiness_containt');
+
+                const bussiness = `<div id="political-status-container" style="border-top: 1px solid grey;">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -1045,9 +1051,9 @@
                                     <input type="checkbox" class="custom-control-input" id="currently${bussinescheck}">
                                     <label class="custom-control-label" for="currently${bussinescheck}">Currently Here</label>
                                 </div>`;
-                    document.getElementById('bussiness_containt').insertAdjacentHTML('beforeend', bussiness);
-                    bussinescheck++;
-                });
+                document.getElementById('bussiness_containt').insertAdjacentHTML('beforeend', bussiness);
+                bussinescheck++;
+            });
             </script>
             <!-- Bangladesh Political Status + Business end -->
 
@@ -1055,7 +1061,7 @@
 
 
             <!-- Probashi Political Status + Living status start -->
-             <div class="row">
+            <div class="row">
                 <div class="col-xl-6">
                     <!-- Basic Example -->
                     <div class="card card-default">
@@ -1070,8 +1076,9 @@
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
                                                 class="ml-2">Political Party Name</span></span>
                                     </div>
-                                    <input type="text" name="political_party_name[]" class="form-control" placeholder="Political Party Name"
-                                        aria-label="Political Party Name" aria-describedby="basic-addon1">
+                                    <input type="text" name="political_party_name[]" class="form-control"
+                                        placeholder="Political Party Name" aria-label="Political Party Name"
+                                        aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="input-group mb-3">
@@ -1079,8 +1086,8 @@
                                         <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
                                                 class="ml-2">Position</span></span>
                                     </div>
-                                    <input type="text" name="position[]" class="form-control" placeholder="Position" aria-label="Position"
-                                        aria-describedby="basic-addon1">
+                                    <input type="text" name="position[]" class="form-control" placeholder="Position"
+                                        aria-label="Position" aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="input-group mb-3">
@@ -1097,8 +1104,8 @@
                                         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
                                                 class="ml-2">End on</span></span>
                                     </div>
-                                    <input type="text" name="end_on[]" class="form-control" placeholder="End on" aria-label="End on"
-                                        aria-describedby="basic-addon1">
+                                    <input type="text" name="end_on[]" class="form-control" placeholder="End on"
+                                        aria-label="End on" aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="input-group mb-3">
@@ -1106,13 +1113,15 @@
                                         <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
                                                 class="ml-2">Country</span></span>
                                     </div>
-                                    <input type="text" name="country[]" class="form-control" placeholder="Country" aria-label="End on"
-                                        aria-describedby="basic-addon1">
+                                    <input type="text" name="country[]" class="form-control" placeholder="Country"
+                                        aria-label="End on" aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" name="courrently_political_osition[]" class="custom-control-input" id="courrently_political_osition">
-                                    <label class="custom-control-label" for="courrently_political_osition">Courrently Political Position</label>
+                                    <input type="checkbox" name="courrently_political_osition[]"
+                                        class="custom-control-input" id="courrently_political_osition">
+                                    <label class="custom-control-label" for="courrently_political_osition">Courrently
+                                        Political Position</label>
                                 </div>
                                 <br>
 
@@ -1121,11 +1130,11 @@
                         </div>
                     </div>
                 </div>
-    <script>
-        let probashiPoliticalcheck = 1;
-        document.getElementById('add-probashi_political_status-btn').addEventListener('click', function() {
-            const probashi_political_status = document.getElementById('probashi_political_status');
-            const probashi_political_status_field = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
+                <script>
+                let probashiPoliticalcheck = 1;
+                document.getElementById('add-probashi_political_status-btn').addEventListener('click', function() {
+                    const probashi_political_status = document.getElementById('probashi_political_status');
+                    const probashi_political_status_field = `<div class="input-group mb-3" style="border-top: 1px solid grey;">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
                                                 class="ml-2">Political Party Name</span></span>
@@ -1174,82 +1183,188 @@
                                     <input type="checkbox" name="courrently_political_osition[]" class="custom-control-input" id="courrently${probashiPoliticalcheck}">
                                     <label class="custom-control-label" for="courrently${probashiPoliticalcheck}">Courrently Political Position</label>
                                 </div>`;
-                                probashi_political_status.insertAdjacentHTML('beforeend', probashi_political_status_field);
-                                probashiPoliticalcheck++;
-        });
-    </script>
+                    probashi_political_status.insertAdjacentHTML('beforeend', probashi_political_status_field);
+                    probashiPoliticalcheck++;
+                });
+                </script>
 
 
                 <div class="col-xl-6">
-                    <!-- Iconic Input Group -->
-                    <div class="card card-default">
-                        <div class="card-header">
-                            <h2>Living status</h2>
-                        </div>
+
+
+
+                    <div class="card card-default">                        
                         <div class="card-body">
-                            <div id="living_containt">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                class="ml-2">Business Name</span></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Business Name"
-                                        aria-label="Business Name" aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
-                                                class="ml-2">Catagory</span></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Catagory" aria-label="Catagory"
-                                        aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
-                                                class="ml-2">Position</span></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Position" aria-label="Position"
-                                        aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
-                                                class="ml-2">Started on</span></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Started on"
-                                        aria-label="Started on" aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
-                                                class="ml-2">End on</span></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="End on" aria-label="End on"
-                                        aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
-                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently Here</label>
-                                </div>
-                                <br>
-
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="probashiCheckbox"
+                                    onchange="probashiCheckbox()">
+                                <label class="form-check-label" for="probashiCheckbox">Add Probashi</label>
                             </div>
-                            <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add More</a>
                         </div>
-                    </div>
+                        </div>
+                        <script>
+                        function probashiCheckbox() {
+                            var checkbox = document.getElementById("probashiCheckbox");
+                            var content = document.getElementById("probashi");
+                            if (checkbox.checked) {
+                                content.style.display = "block";
+                            } else {
+                                content.style.display = "none";
+                            }
+                        }
+                        </script>
 
+                        <!-- Iconic Input Group -->
+                        <div class="card card-default" id="probashi" style="display: none;">
+
+
+                        <div class="card-body">
+                                <div id="living_containt">
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">Address Line</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Address Line"
+                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">House Number</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="House Number"
+                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">City</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="City"
+                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">Zip code</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Zip code"
+                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">Country</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Country"
+                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                    </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="card-header">
+                                <h2>Living status</h2>
+                            </div>
+                            <div class="card-body">
+                                <div id="living_containt">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">Citizen</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Citizen"
+                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add More</a>
+                            </div>
+
+                            <div class="card-body">
+                                <div id="living_containt">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">Visa</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Visa"
+                                            aria-label="Business Name" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add More</a>
+                            </div>
+
+                           
+
+
+                            <div class="card-header">
+                                <h2>Probashi Political Status</h2>
+                            </div>
+                            <div class="card-body">
+                                <div id="living_containt">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
+                                                    class="ml-2">Political Party Name</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Political Party Name"
+                                            aria-label="Political Party Name" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
+                                                    class="ml-2">Started on </span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Started on"
+                                            aria-label="Started on" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
+                                                    class="ml-2">End on</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="End on"
+                                            aria-label="End on" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                                    class="ml-2">Country</span></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Country"
+                                            aria-label="Country" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
+                                        <label class="custom-control-label" for="customCheckPrimaryone">Currently
+                                            Here</label>
+                                    </div>
+                                    <br>
+
+                                </div>
+                                <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add
+                                    More</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <script>
+                <script>
                 document.getElementById('living_add_More').addEventListener('click', function() {
-                    
-            const living_containt = document.getElementById('living_containt');                    
+
+                    const living_containt = document.getElementById('living_containt');
 
                     const living = `<div id="political-status-container" style="border-top: 1px solid grey;">
                                 <div class="input-group mb-3">
@@ -1303,122 +1418,122 @@
                                 </div>`;
                     document.getElementById('living_containt').insertAdjacentHTML('beforeend', living);
                 });
-            </script>
-            <!-- Probashi Political Status + Living status end -->
-
-
-
-
-
-            <a class="btn btn-primary" id="submitbtn">Submit</a>
-
-
-
-
-            <footer class="footer mt-auto">
-                <div class="copyright bg-white">
-                    <p>
-                        &copy; <span id="copy-year"></span> Copyright BDCommunication by <a class="text-primary"
-                            href="https://www.BDCommunication.com" target="_blank">BDCommunication</a>.
-                    </p>
-                </div>
-                <script>
-                var d = new Date();
-                var year = d.getFullYear();
-                document.getElementById("copy-year").innerHTML = year;
                 </script>
-            </footer>
+                <!-- Probashi Political Status + Living status end -->
 
+
+
+
+
+                <a class="btn btn-primary" id="submitbtn">Submit</a>
+
+
+
+
+                <footer class="footer mt-auto">
+                    <div class="copyright bg-white">
+                        <p>
+                            &copy; <span id="copy-year"></span> Copyright BDCommunication by <a class="text-primary"
+                                href="https://www.BDCommunication.com" target="_blank">BDCommunication</a>.
+                        </p>
+                    </div>
+                    <script>
+                    var d = new Date();
+                    var year = d.getFullYear();
+                    document.getElementById("copy-year").innerHTML = year;
+                    </script>
+                </footer>
+
+            </div>
         </div>
-    </div>
 
 
 
-    <script src="{{asset('newdash/plugins/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('newdash/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('newdash/plugins/simplebar/simplebar.min.js')}}"></script>
-    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
-    <script src="{{asset('newdash/plugins/apexcharts/apexcharts.js')}}"></script>
-    <script src="{{asset('newdash/plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js')}}"></script>
-    <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
-    <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-world-mill.js')}}"></script>
-    <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-us-aea.js')}}"></script>
-    <script src="{{asset('newdash/plugins/daterangepicker/moment.min.js')}}"></script>
-    <script src="{{asset('newdash/plugins/daterangepicker/daterangepicker.js')}}"></script>
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-    <script src="{{asset('newdash/plugins/toaster/toastr.min.js')}}"></script>
-    <script src="{{asset('newdash/js/mono.js')}}"></script>
-    <script src="{{asset('newdash/js/chart.js')}}"></script>
-    <script src="{{asset('newdash/js/map.js')}}"></script>
-    <script src="{{asset('newdash/js/custom.js')}}"></script>
+        <script src="{{asset('newdash/plugins/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('newdash/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('newdash/plugins/simplebar/simplebar.min.js')}}"></script>
+        <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+        <script src="{{asset('newdash/plugins/apexcharts/apexcharts.js')}}"></script>
+        <script src="{{asset('newdash/plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js')}}"></script>
+        <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
+        <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-world-mill.js')}}"></script>
+        <script src="{{asset('newdash/plugins/jvectormap/jquery-jvectormap-us-aea.js')}}"></script>
+        <script src="{{asset('newdash/plugins/daterangepicker/moment.min.js')}}"></script>
+        <script src="{{asset('newdash/plugins/daterangepicker/daterangepicker.js')}}"></script>
+        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+        <script src="{{asset('newdash/plugins/toaster/toastr.min.js')}}"></script>
+        <script src="{{asset('newdash/js/mono.js')}}"></script>
+        <script src="{{asset('newdash/js/chart.js')}}"></script>
+        <script src="{{asset('newdash/js/map.js')}}"></script>
+        <script src="{{asset('newdash/js/custom.js')}}"></script>
 
-    <script>
-    $('#submitbtn').on('click', function() {
+        <script>
+        $('#submitbtn').on('click', function() {
 
-        var Userinfo = {
-            "firstName": $('#first_name').val(),
-            "lastName": $('#last_name').val(),
-            "email": $('#email').val(),
-            "phone": $('#phone').val(),
-            "password": $('#password').val(),
-            "dateOfBirth": $('#date_birth').val(),
-            "religious": $('#religious').val()
-        }
+            var Userinfo = {
+                "firstName": $('#first_name').val(),
+                "lastName": $('#last_name').val(),
+                "email": $('#email').val(),
+                "phone": $('#phone').val(),
+                "password": $('#password').val(),
+                "dateOfBirth": $('#date_birth').val(),
+                "religious": $('#religious').val()
+            }
 
-        var profession = {
-            "companyName": $("input[name='company_name[]']").map(function() {
-                return $(this).val();
-            }).get(),
-            "position": $("input[name='position[]']").map(function() {
-                return $(this).val();
-            }).get(),
-            "started_on": $("input[name='started_on[]']").map(function() {
-                return $(this).val();
-            }).get(),
-            "end_one": $("input[name='end_one[]']").map(function() {
-                return $(this).val();
-            }).get(),
-            "currently": $("input[name='currently[]']").map(function() {
-                return $(this).val();
-            }).get()
-        };
+            var profession = {
+                "companyName": $("input[name='company_name[]']").map(function() {
+                    return $(this).val();
+                }).get(),
+                "position": $("input[name='position[]']").map(function() {
+                    return $(this).val();
+                }).get(),
+                "started_on": $("input[name='started_on[]']").map(function() {
+                    return $(this).val();
+                }).get(),
+                "end_one": $("input[name='end_one[]']").map(function() {
+                    return $(this).val();
+                }).get(),
+                "currently": $("input[name='currently[]']").map(function() {
+                    return $(this).val();
+                }).get()
+            };
 
-        var parmanentAddress = {
-            "addressline": $('.permanent #addressline').val(),
-            "house_number": $('.permanent #house_number').val(),
-            "zip_code": $('.permanent #zip_code').val(),
-            "devision": $('.permanent #devision').val(),
-            "districts": $('.permanent #districts').val(),
-            "upazilas": $('.permanent #upazilas').val(),
-            "poroshaba": $('.permanent #poroshaba').val(),
-            "unions": $('.permanent #unions').val(),
-            "word": $('.permanent #word').val(),
-            "country": $('.permanent #country').val(),
-            "citizen": $('.permanent #citizen').val()
-        }
+            var parmanentAddress = {
+                "addressline": $('.permanent #addressline').val(),
+                "house_number": $('.permanent #house_number').val(),
+                "zip_code": $('.permanent #zip_code').val(),
+                "devision": $('.permanent #devision').val(),
+                "districts": $('.permanent #districts').val(),
+                "upazilas": $('.permanent #upazilas').val(),
+                "poroshaba": $('.permanent #poroshaba').val(),
+                "unions": $('.permanent #unions').val(),
+                "word": $('.permanent #word').val(),
+                "country": $('.permanent #country').val(),
+                "citizen": $('.permanent #citizen').val()
+            }
 
-        var presentAddress = {
-            "addressline": $('.present #addressline').val(),
-            "house_number": $('.present #house_number').val(),
-            "zip_code": $('.present #zip_code').val(),
-            "devision": $('.present #devision').val(),
-            "districts": $('.present #districts').val(),
-            "upazilas": $('.present #upazilas').val(),
-            "poroshaba": $('.present #poroshaba').val(),
-            "unions": $('.present #unions').val(),
-            "word": $('.present #word').val(),
-            "country": $('.present #country').val(),
-            "citizen": $('.present #citizen').val()
-        }
+            var presentAddress = {
+                "addressline": $('.present #addressline').val(),
+                "house_number": $('.present #house_number').val(),
+                "zip_code": $('.present #zip_code').val(),
+                "devision": $('.present #devision').val(),
+                "districts": $('.present #districts').val(),
+                "upazilas": $('.present #upazilas').val(),
+                "poroshaba": $('.present #poroshaba').val(),
+                "unions": $('.present #unions').val(),
+                "word": $('.present #word').val(),
+                "country": $('.present #country').val(),
+                "citizen": $('.present #citizen').val()
+            }
 
-        console.log(Userinfo);
-        console.log(profession);
+            console.log(Userinfo);
+            console.log(profession);
 
-        console.log(parmanentAddress);
-        console.log(presentAddress)
+            console.log(parmanentAddress);
+            console.log(presentAddress)
 
-    });
-    </script>
+        });
+        </script>
 
 </body>
 
