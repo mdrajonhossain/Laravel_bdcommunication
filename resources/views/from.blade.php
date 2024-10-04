@@ -1524,6 +1524,18 @@
                 return $(this).val();
             }).get()
         };
+        var info = [];
+        for (var i = 0; i < profession.companyName.length; i++) {
+            info.push({
+                companyName: profession.companyName[i],
+                position: profession.position[i],
+                started_on: profession.started_on[i],
+                end_one: profession.end_one[i],
+                currently: profession.currently[i]
+            });
+        }
+        console.log(info);
+        
 
         var parmanentAddress = {
             "addressline": $('.permanent #addressline').val(),
@@ -1553,11 +1565,15 @@
             "citizen": $('.present #citizen').val()
         }
 
-        console.log(Userinfo);
-        console.log(profession);
+ 
 
-        console.log(parmanentAddress);
-        console.log(presentAddress)
+
+
+        // console.log(Userinfo);
+        // console.log(profession);
+
+        // console.log(parmanentAddress);
+        // console.log(presentAddress)
 
     });
     </script>
