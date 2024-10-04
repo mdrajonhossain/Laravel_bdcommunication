@@ -1534,8 +1534,8 @@
                 currently: profession.currently[i]
             });
         }
-        console.log(info);
-        
+        // console.log(info);
+
 
         var parmanentAddress = {
             "addressline": $('.permanent #addressline').val(),
@@ -1565,7 +1565,27 @@
             "citizen": $('.present #citizen').val()
         }
 
- 
+  
+
+        const eduInfo = {
+            course_name: document.getElementsByName('course_name[]'),
+            title: document.getElementsByName('title[]'),
+            passingyear: document.getElementsByName('passingyear[]'),
+            running: document.getElementsByName('running[]'),
+        };
+
+        let educationInfo = [];
+        for (let i = 0; i < eduInfo.course_name.length; i++) {
+            educationInfo.push({
+                course_name: eduInfo.course_name[i].value,
+                title: eduInfo.title[i].value,
+                passingyear: eduInfo.passingyear[i].value,
+                running: eduInfo.running[i].checked ? 'Yes' : 'No'
+            });
+        }
+
+        console.log(educationInfo);
+  
 
 
 
