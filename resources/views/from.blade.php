@@ -1344,7 +1344,7 @@
                             <h2>Probashi Political Status</h2>
                         </div>
                         <div class="card-body">
-                            <div id="living_containt">
+                            <div id="probashi_political_statusaa">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
@@ -1382,14 +1382,14 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
-                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently
+                                    <input type="checkbox" class="custom-control-input" id="Probashipoliticalstatus[]">
+                                    <label class="custom-control-label" for="Probashipoliticalstatus[]">Currently
                                         Here</label>
                                 </div>
                                 <br>
 
                             </div>
-                            <a href="javascript:void(0);" id="bussiness_add_More" class="btn btn-primary ml-2">Add
+                            <a href="javascript:void(0);" id="Probashi_political_status_add_More" class="btn btn-primary ml-2">Add
                                 More</a>
                         </div>
                     </div>
@@ -1397,42 +1397,23 @@
                 </div>
             </div>
             <script>
-            document.getElementById('living_add_More').addEventListener('click', function() {
-
-                const living_containt = document.getElementById('living_containt');
-
-                const living = `<div id="political-status-container" style="border-top: 1px solid grey;">
+                let Probashipoliticalstatus = 1;
+            document.getElementById('Probashi_political_status_add_More').addEventListener('click', function() {
+                const probashi_political_statusaa = document.getElementById('probashi_political_statusaa');
+                const probashipoliticalstatusdiv = `<div id="living_containt" style="border-top: 1px solid grey;">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-home-modern" id="basic-addon3"><span
-                                                class="ml-2">Business Name</span></span>
+                                                class="ml-2">Political Party Name</span></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Business Name"
-                                        aria-label="Business Name" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" placeholder="Political Party Name"
+                                        aria-label="Political Party Name" aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
-                                                class="ml-2">Catagory</span></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Catagory" aria-label="Catagory"
-                                        aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
-                                                class="ml-2">Position</span></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Position" aria-label="Position"
-                                        aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
-                                                class="ml-2">Started on</span></span>
+                                                class="ml-2">Started on </span></span>
                                     </div>
                                     <input type="text" class="form-control" placeholder="Started on"
                                         aria-label="Started on" aria-describedby="basic-addon1">
@@ -1440,18 +1421,29 @@
 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                        <span class="input-group-text mdi mdi-dumbbell" id="basic-addon3"><span
                                                 class="ml-2">End on</span></span>
                                     </div>
                                     <input type="text" class="form-control" placeholder="End on" aria-label="End on"
                                         aria-describedby="basic-addon1">
                                 </div>
 
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mdi mdi-timer-sand" id="basic-addon3"><span
+                                                class="ml-2">Country</span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Country" aria-label="Country"
+                                        aria-describedby="basic-addon1">
+                                </div>
+
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimaryone">
-                                    <label class="custom-control-label" for="customCheckPrimaryone">Currently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="Probashipoliticalstatus${Probashipoliticalstatus}">
+                                    <label class="custom-control-label" for="Probashipoliticalstatus${Probashipoliticalstatus}">Currently
+                                        Here</label>
                                 </div>`;
-                document.getElementById('living_containt').insertAdjacentHTML('beforeend', living);
+                        probashi_political_statusaa.insertAdjacentHTML('beforeend', probashipoliticalstatusdiv);
+                        Probashipoliticalstatus++;
             });
             </script>
             <!-- Probashi Political Status + Living status end -->
