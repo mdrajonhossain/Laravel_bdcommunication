@@ -749,8 +749,8 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimary">
-                                    <label class="custom-control-label" for="customCheckPrimary">Curently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="politicalcheck[]">
+                                    <label class="custom-control-label" for="politicalcheck[]">Curently Here</label>
                                 </div>
                                 <br>
 
@@ -807,8 +807,7 @@
                         <label class="custom-control-label" for="currently${politicalStatuscheck}">Currently Here</label>
                         </div>
                     </div>`;
-                document.getElementById('political-status-container').insertAdjacentHTML('beforeend',
-                    newPoliticalStatus);
+                document.getElementById('political-status-container').insertAdjacentHTML('beforeend', newPoliticalStatus);
                 politicalStatuscheck++;
             });
             </script>
@@ -864,8 +863,8 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheckPrimarytowo">
-                                    <label class="custom-control-label" for="customCheckPrimarytowo">Curently
+                                    <input type="checkbox" class="custom-control-input" id="bangladeshpoliticalchecke[]">
+                                    <label class="custom-control-label" for="bangladeshpoliticalchecke[]">Curently
                                         Here</label>
                                 </div>
                                 <br>
@@ -917,8 +916,8 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="currently${bangladeshpoliticalchecke}">
-                                    <label class="custom-control-label" for="currently${bangladeshpoliticalchecke}">Curently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="bangladeshpoliticalchecke${bangladeshpoliticalchecke}">
+                                    <label class="custom-control-label" for="bangladeshpoliticalchecke${bangladeshpoliticalchecke}">Curently Here</label>
                                 </div>
                             </div>`;
                     bangladeshpoliticalstatus.insertAdjacentHTML('beforeend', bangladeshpoliticalstatusfield);
@@ -981,8 +980,8 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="bussinescheckb">
-                                    <label class="custom-control-label" for="bussinescheckb">Currently
+                                    <input type="checkbox" class="custom-control-input" id="bussinescheckb[]">
+                                    <label class="custom-control-label" for="bussinescheckb[]">Currently
                                         Here</label>
                                 </div>
                                 <br>
@@ -1048,8 +1047,8 @@
                                 </div>
 
                                 <div class="custom-control custom-checkbox d-inline-block mr-3 mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="currently${bussinescheckb}">
-                                    <label class="custom-control-label" for="currently${bussinescheckb}">Currently Here</label>
+                                    <input type="checkbox" class="custom-control-input" id="bussinescheckb${bussinescheckb}">
+                                    <label class="custom-control-label" for="bussinescheckb${bussinescheckb}">Currently Here</label>
                                 </div>`;
                 document.getElementById('bussiness_containt').insertAdjacentHTML('beforeend', bussiness);
                 bussinescheckb++;
